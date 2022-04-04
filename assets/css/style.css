@@ -248,3 +248,11 @@ img {
 .info .info-left h1 {
     font-size: 60px;
 }
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 70px 0;
+}
