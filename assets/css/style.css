@@ -1,6 +1,8 @@
 :root {
     --primary-color: #6cf;
     --secondary-color: #ff8f3c;
+    --gray: #777;
+    --light-gray: #eee;
     --baloo-paaji: 'Baloo Paaji', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
@@ -14,7 +16,12 @@
 body {
     font-family: var(--poppins);
 }
-
+a,
+button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
 img {
     max-width: 100%;
     width: 100%;
@@ -27,6 +34,25 @@ img {
 }
 .font-p {
     font-family: var(--poppins);
+}
+.text-center {
+    text-align: center;
+}
+.w-max {
+    width: max-content;
+}
+.mx-auto {
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+}
+.text-sm {
+    font-size: 14px;
+    line-height: 16px;
+}
+.space-between {
+    justify-content: space-between;
 }
 .container {
     width: 80%;
@@ -118,7 +144,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--light-gray);
     padding: 30px;
 }
 
@@ -138,4 +164,65 @@ img {
 }
 .features-grid div p {
     color: #777777;
+}
+
+/* Trending Product */
+.trending-product {
+    padding: 70px 0;
+}
+.trending-product h1 {
+    font-size: 40px
+}
+
+.trending-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.trending-product-grid del {
+    font-style: italic;
+    font-weight: bolder;
+}
+.trending-product-grid .discount {
+    margin: 0 7px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: .4s;
+}
+
+.trending-product-grid .price {
+    color: var(--gray);
+    font-weight: bold;
+    transition: .4s;
+}
+.trending-product-grid .tp {
+    border: 1px solid var(--light-gray);
+    position: relative;
+}
+.trending-product-grid .tp .badge a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #7fbc1e;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.trending-product-grid .tp .info {
+    padding: 10px 15px;
+    transition: .4s;
+}
+
+.trending-product-grid .tp .info a {
+    margin-top: 12px;
+    display: inline-block;
+}
+.trending-product-grid .tp:hover>.info,
+.trending-product-grid .tp:hover>.info .discount,
+.trending-product-grid .tp:hover>.info .price,
+.trending-product-grid .tp:hover>.info a {
+    background-color: var(--secondary-color);
+    transition: .4s;
+    color: #fff;
 }
