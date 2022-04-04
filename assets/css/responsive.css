@@ -4,21 +4,38 @@
 }
 
 /* Medium Device */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 }
 
 /* Large Device */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
+    header {
+        width: 100%;
+        margin: 0 30px;
+        position: relative;
+    }
 
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        visibility: hidden;
+    }
+
+    header button {
+        position: fixed;
+        right: 30px;
+        visibility: visible;
+    }
 }
 
 /* Extra Large Device */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
 }
 
 /* Extra Extra Large Device */
-@media only screen and (min-width: 1201) and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
 
 }

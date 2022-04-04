@@ -1,16 +1,96 @@
 :root {
-    --primary-color: red;
-    --secondary-color: green;
-
-    --hero-bg-img: url('assets/img/image.png');
-    --team-bg-img: url('assets/img/image.png');
+    --primary-color: #6cf;
+    --secondary-color: #ff8f3c;
 }
 
-/* Typography */
-a, 
-button {
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+.container {
+    width: 1440px;
+    margin: auto;
+}
+.inner-container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Header Section */
+.top-bar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    z-index: 1;
+}
+.site-header .logo {
+    width: 120px;
+}
+.site-header h3 {
+    align-self: center;
+}
+
+.site-header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+.site-header ul li a {
     text-decoration: none;
-    cursor: pointer;
+    color: #000;
 }
 
-/* Hero Section CSS */
+.site-header button {
+    position: absolute;
+    right: 0;
+    align-self: center;
+    width: 30px;
+    height: auto;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.bottom-bar {
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: -121px;
+}
+.hero-slides {
+    position: relative;
+}
+.hero-slides .hero-slides-pattern {
+    position: absolute;
+    bottom: 0;
+}
