@@ -237,15 +237,15 @@ img {
 .i {
     padding: 70px 0;
 }
-.info {
+.inform {
     padding: 70px 0 140px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr)
 }
-.info .info-left img {
+.inform .info-left img {
     width: 250px;
 }
-.info .info-left h1 {
+.inform .info-left h1 {
     font-size: 60px;
 }
 
