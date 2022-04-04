@@ -99,8 +99,15 @@ img {
 .site-header ul li a {
     text-decoration: none;
     color: #000;
+    transition: .4s;
 }
-
+.site-header ul li a:hover {
+    color: var(--secondary-color) !important;
+    transition: .5s;
+}
+.site-header ul li a.active {
+    color: var(--secondary-color);
+}
 .site-header button {
     position: absolute;
     right: 0;
@@ -147,13 +154,13 @@ img {
     width: 500px;
     transition: .4s;
     transform: translateY(50px);
-    opacity: 0;
+    display: none;
     padding: 0 20px;
 }
 .cart-box:hover .cart-modal {
     transition: .4s;
     transform: translateY(0);
-    opacity: 1;
+    display: block;
 }
 .cart-product {
     align-items: center;
