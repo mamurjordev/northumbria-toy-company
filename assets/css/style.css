@@ -26,6 +26,9 @@ img {
     max-width: 100%;
     width: 100%;
 }
+.text-white {
+    color: #fff;
+}
 .bg-white {
     background-color: #fff;
 }
@@ -225,4 +228,23 @@ img {
     background-color: var(--secondary-color);
     transition: .4s;
     color: #fff;
+}
+
+/* Info Section */
+.info-section {
+    position: relative;
+}
+.i {
+    padding: 70px 0;
+}
+.info {
+    padding: 70px 0 140px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.info .info-left img {
+    width: 250px;
+}
+.info .info-left h1 {
+    font-size: 60px;
 }
