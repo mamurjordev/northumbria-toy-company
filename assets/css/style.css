@@ -1,0 +1,16 @@
+:root {
+    --primary-color: red;
+    --secondary-color: green;
+
+    --hero-bg-img: url('assets/img/image.png');
+    --team-bg-img: url('assets/img/image.png');
+}
+
+/* Typography */
+a, 
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hero Section CSS */
