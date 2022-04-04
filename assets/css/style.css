@@ -1,24 +1,39 @@
 :root {
     --primary-color: #6cf;
     --secondary-color: #ff8f3c;
+    --baloo-paaji: 'Baloo Paaji', sans-serif;
+    --poppins: 'Poppins', sans-serif;
 }
 
+/* Typography */
 * {
     margin: 0;
     padding: 0;
     outline: 0;
+}
+body {
+    font-family: var(--poppins);
 }
 
 img {
     max-width: 100%;
     width: 100%;
 }
+.bg-white {
+    background-color: #fff;
+}
+.font-b {
+    font-family: var(--baloo-paaji);
+}
+.font-p {
+    font-family: var(--poppins);
+}
 .container {
-    width: 1440px;
+    width: 80%;
     margin: auto;
 }
 .inner-container {
-    width: 1200px;
+    width: 70%;
     margin: auto;
 }
 
@@ -93,4 +108,34 @@ img {
 .hero-slides .hero-slides-pattern {
     position: absolute;
     bottom: 0;
+}
+
+/* Features Section */
+.features-section{
+    padding: 70px 0;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border: 1px solid #eee;
+    padding: 30px;
+}
+
+.features-grid div {
+    text-align: center;
+}
+.features-grid div img {
+    width: 55px;
+}
+.features-grid div h3 {
+    transition: .5s;
+}
+.features-grid div:hover>h3 {
+    color: var(--secondary-color) !important;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.features-grid div p {
+    color: #777777;
 }
