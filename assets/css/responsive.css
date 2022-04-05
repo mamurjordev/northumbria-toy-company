@@ -9,16 +9,17 @@
     .trending-product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .features-grid {
+        padding: 30px 0;
+    }
 }
 
 /* Large Device */
 @media only screen and (max-width: 992px) {
     header {
         width: 100%;
-        margin: 0 30px;
         position: relative;
     }
-
     header ul {
         flex-direction: column;
         position: absolute;
@@ -29,7 +30,32 @@
     header button {
         position: fixed;
         right: 30px;
-        visibility: visible;
+        display: block;
+    }
+    .inform,
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-title {
+        font-size: 24px !important;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    header button {
+        position: fixed;
+        right: 30px;
+        display: none !important;
+    }
+    .blog-title {
+        font-size: 42px;
+        line-height: 50px;
+        padding: 40px 0;
     }
 }
 
@@ -53,6 +79,9 @@
         right: 0;
     }
     .trending-product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
