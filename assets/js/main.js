@@ -1,6 +1,6 @@
 const openIcon = document.getElementById('open')
 const closeIcon = document.getElementById('close')
-const menubar = document.querySelector('ul')
+const menubar = document.getElementById('menu')
 
 function load_events() {
     openIcon.addEventListener('click', openToggle)
@@ -12,14 +12,14 @@ function openToggle() {
     openIcon.style.display = 'none'
     closeIcon.style.display = 'block'
 
-    menubar.style.visibility = 'visible'
+    menubar.style.opacity = '1'
 }
 
 function closeToggle() {
     closeIcon.style.display = 'none'
     openIcon.style.display = 'block'
 
-    menubar.style.visibility = 'hidden'
+    menubar.style.opacity = '0'
 }
 
 // Hero Slider

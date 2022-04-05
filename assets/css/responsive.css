@@ -24,7 +24,7 @@
         flex-direction: column;
         position: absolute;
         top: 60px;
-        visibility: hidden;
+        opacity: 0;
     }
 
     header button {
@@ -43,6 +43,11 @@
     }
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .site-header ul {
+        background: #fff;
+        width: 89%;
+        padding: 10px 20px;
     }
 }
 
