@@ -374,3 +374,43 @@ img {
 .content {
     margin-top: 30px;
 }
+
+.form-grp {
+    margin-bottom: 20px;
+}
+.form-grp label {
+    display: block;
+}
+.form-grp input {
+    width: 97%;
+}
+.form-grp input {
+    padding: 10px 12px;
+    margin-top: 7px;
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+}
+.section-credit {
+    padding: 0 0 50px 0;
+}
+.section-credit form button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: 0;
+    font-family: var(--baloo-paaji);
+    padding: 3px 20px;
+}
+.credit {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+.credit-table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px 10px;
+}
