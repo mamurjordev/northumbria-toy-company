@@ -29,6 +29,9 @@ img {
     max-width: 100%;
     width: 100%;
 }
+.mt-30 {
+    margin-top: 30px;
+}
 .text-white {
     color: #fff;
 }
@@ -71,7 +74,7 @@ img {
 
 /* Header Section */
 .top-bar {
-    height: 40px;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -135,58 +138,10 @@ img {
     justify-content: center;
     align-items: center;
 }
-.cart {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 3px 30px;
-    display: flex;
-    align-items: center;
-}
-.cart img {
-    width: 20px;
-    margin-right: 10px;
-}
-.cart-box {
-    position: relative;
-}
-.cart-modal {
-    position: absolute;
-    top: 35px;
-    right: 0;
-    width: 500px;
-    transition: .4s;
-    transform: translateY(50px);
-    display: none;
-    padding: 0 20px;
-}
-.cart-box:hover .cart-modal {
-    transition: .4s;
-    transform: translateY(0);
-    display: block;
-}
-.cart-product {
-    align-items: center;
-    margin: 20px 0;
-    border: 1px solid var(--light-gray);
-}
 
-.cart-product img {
-    width: 100px;
-}
-.cart-product h4,
-.cart-product .product-inf {
-    width: 320px;
-    padding: 0 20px;
-}
-.cart-product div.button {
-    width: 30px;
-}
-.cart-product div.button a img {
-    width: 40px;
-}
 /* Hero Section */
 .hero-section {
-    margin-top: -88px;
+    margin-top: -80px;
 }
 .hero-slides {
     position: relative;
@@ -304,7 +259,8 @@ img {
     width: 250px;
 }
 .inform .info-left h1 {
-    font-size: 60px;
+	font-size: 60px;
+	line-height: 65px;
 }
 
 /* Image Grid */
@@ -417,5 +373,4 @@ img {
 }
 .content {
     margin-top: 30px;
-    padding: 0 20px;
 }
