@@ -400,6 +400,13 @@ img {
     font-family: var(--baloo-paaji);
     padding: 3px 20px;
 }
+.delete {
+    background-color: #FF0000;
+    color: #fff;
+    border: 0;
+    font-family: var(--baloo-paaji);
+    padding: 3px 20px;
+}
 .credit {
     overflow-x: scroll;
     padding-bottom: 20px;
