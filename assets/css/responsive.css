@@ -12,6 +12,9 @@
     .features-grid {
         padding: 30px 0;
     }
+    .credit-table {
+        width: 600px;
+    }
 }
 
 /* Large Device */
@@ -74,6 +77,9 @@
     }
     .features-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .form-grp input {
+        width: 94%;
     }
 }
 
