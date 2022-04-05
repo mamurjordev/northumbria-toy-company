@@ -65,7 +65,7 @@
         width: 100%;
     }
     .inner-container {
-        width: 100%;
+        width: 92%;
     }
     .features-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -81,7 +81,8 @@
     .trending-product-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .blog-grid {
+    .blog-grid,
+    .image-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
